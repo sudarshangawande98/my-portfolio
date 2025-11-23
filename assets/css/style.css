@@ -296,15 +296,18 @@ img {
 }
 
 .home__social-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* Slightly increased size for better visibility */
   color: var(--first-color);
+  text-decoration: none; /* Ensures no underline */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
 .home__social-icon:hover {
   color: var(--first-color-alt);
-  transform: translateY(-.25rem);
-  transition: 1.5s;
+  transform: translateY(-0.25rem) scale(1.1); /* Adds a slight zoom effect */
+  cursor: pointer; /* Ensures it looks clickable */
 }
+
 
 .home__blob {
   width: 200px;
@@ -416,11 +419,15 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img {
-  width: 200px;
-  border-radius: .5rem;
-  justify-self: center;
-  align-self: center;
+  width: 250px; /* Adjust size if needed */
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 0.5rem;
+  display: block; /* Ensures proper alignment */
+  margin: 0 auto; /* Centers the image */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for a better look */
 }
+
 
 .about__description {
   text-align: center;
@@ -945,6 +952,8 @@ footer .footer__social a:hover {
   text-align: center;
   color: var(--text-color-light);
   margin-top: var(--mb-3);
+  color: #ffffff;
+
 }
 
 .footer__title,

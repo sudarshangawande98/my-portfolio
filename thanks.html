@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent | Thank You</title>
+
+    <!-- Unicons Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0F0F0F, #111827);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .thanks-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 50px;
+            border-radius: 15px;
+            width: 85%;
+            max-width: 550px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0px 0px 35px rgba(0, 153, 255, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #4e9eff;
+        }
+
+        p {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 25px;
+        }
+
+        .icon {
+            font-size: 60px;
+            color: #4e9eff;
+            margin-bottom: 20px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #4e9eff;
+            }
+
+            to {
+                text-shadow: 0 0 25px #4e9eff;
+            }
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            background: #4e9eff;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background: #2e6fcc;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: #4e9eff;
+            font-size: 28px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+            text-shadow: 0px 0px 15px #4e9eff;
+        }
+
+        .name {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="thanks-container">
+        <i class="uil uil-check-circle icon"></i>
+
+        <h1>Message Sent Successfully!</h1>
+        <p>Thank you for contacting me. I will get back to you shortly.</p>
+
+        <div class="btn-container">
+            <a href="index.html" class="btn">
+                <i class="uil uil-home" style="margin-right: 10px;"></i> Back to Home
+            </a>
+
+            <a href="https://sudarshangawande.com/#skills" class="btn">
+                <i class="uil uil-folder" style="margin-right: 10px;"></i> View Projects
+            </a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://github.com/sudarshan-gawande" target="_blank"><i class="uil uil-github"></i></a>
+            <a href="https://linkedin.com/in/sudarshan-gawande" target="_blank"><i
+                    class="uil uil-linkedin-alt"></i></a>
+            <a href="mailto:sudarshangawande98@gmail.com"><i class="uil uil-envelope"></i></a>
+        </div>
+
+        <div class="name">© 2025 Sudarshan Gawande | DevOps Engineer</div>
+    </div>
+
+</body>
+
+</html>
